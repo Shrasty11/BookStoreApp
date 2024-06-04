@@ -13,7 +13,7 @@ function Cards({item}) {
         </h2>
         <p>{item.title}</p>
         <div className="card-actions  flex justify-between">
-        <div className="badge badge-outline">${item.price}</div> 
+        <div className="badge badge-outline">{item.price}₹</div> 
         <div className="badge badge-outline hover:bg-blue-500 hover:text-white duration-200 px-3 py-3"><button>Buy now</button></div>
         </div>
       </div>

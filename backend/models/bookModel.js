@@ -1,13 +1,18 @@
 import mongoose from 'mongoose';
 
+
 const bookSchema = new mongoose.Schema({
     name: {
         type: String,
     },    
     title: {
-        type: String,
-       
-    },    
+        type: String,   
+    },
+    // user: { 
+    //     type: Types.ObjectId, 
+    //     ref: 'User', 
+    //     required: true 
+    // },
     price: {
         type: String,
        
@@ -17,7 +22,7 @@ const bookSchema = new mongoose.Schema({
        
     },    
     image : {
-        type: String,
+        type: Array,
     }    
     
 });
