@@ -104,9 +104,15 @@ function Dashboard() {
                                     <span>{item.name} - {item.category}</span>
                                 </div>
                                 <div className='mt-5'>
-                                    <button className="btn btn-outline btn-success mr-3" id={item._id} onClick={handleViewBtn}> View</button>
-                                    <button className="btn btn-outline btn-warning mr-3" id={item._id} onClick={handleUpdate}> Update</button>
-                                    <button className="btn btn-outline btn-error" id={item._id} onClick={handleDelete}> Delete</button>
+                                    <button className="btn btn-outline btn-success mr-3" id={item._id} onClick={handleViewBtn}>
+                                         View
+                                    </button>
+                                    <button className="btn btn-outline btn-warning mr-3" id={item._id} onClick={handleUpdate}>
+                                        Update
+                                    </button>
+                                    <button className="btn btn-outline btn-error" id={item._id} onClick={handleDelete}> 
+                                        Delete
+                                    </button>
                                 </div>
                             </div>   
                         ))}

@@ -10,6 +10,7 @@ import About from "./About/About";
 import AddBooks from "./AddBook/AddBooks";
 import Dashboard from "./Dashboard/Dashboard";
 import UpdateBook from "./UpdateBook/UpdateBook";
+import BookView from "./BookView/BookView";
 
 function App() {
   const[authUser, setAuthUser] = useAuth();
@@ -29,8 +30,9 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/update" element = {<UpdateBook/>} />
+        <Route path="/newbook" element={<BookView/>} />
+        <Route path="/newbook/id" element={<BookView/>} />
       </Routes>
-
       <Toaster/>
     </div> 
     </>
@@ -38,6 +40,3 @@ function App() {
 }
 
 export default App;
-
-
-//hidden md:block text-sm dark:bg-black-700 dark:text-white px-3 py-2 bg-base-500 text-gray hover:bg-gray-200 rounded-md cursor-pointer

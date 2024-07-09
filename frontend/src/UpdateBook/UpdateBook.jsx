@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import {toast} from "react-hot-toast";
 import axios from "axios";
-import { useAuth } from '../context/AuthProvider';
 import { CloudinaryUpload } from '../utils/cloudinary';
 
 function UpdateBook() {
